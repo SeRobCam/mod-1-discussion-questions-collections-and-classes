@@ -2,7 +2,23 @@
 
 class Car
 
+    attr_accessor :make, :model
 
+    @all = []
+
+    def initialize (make, model)
+        @name = name 
+        @model = model 
+        @all << self
+    end
+
+    def self.all 
+        @all 
+    end
+
+    def self.drive
+        puts "VROOOOOOOOOOOOM!"
+    end
 
 end
 

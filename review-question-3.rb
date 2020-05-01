@@ -20,3 +20,46 @@ sandwich_photo.comments
 
 Comment.all
 #=> [#<Comment:0x00007fae28043700>]
+
+
+class User 
+
+    attr_reader :name
+
+    def initilize(name)
+        @name = name 
+    end
+
+
+
+end 
+
+
+class Photo 
+
+    attr_accessor :photo
+
+    def initialize(photo)
+        @photo = photo
+    end
+
+    def self.sandwich_photo
+        
+    end
+
+
+end 
+
+
+class Comment 
+
+    attr_accessor :comment
+
+    def initialize(comment)
+        @comment = comment
+    end
+
+    def make_comment
+        puts "this is such a beautiful photo of your lunch!! I love photos of other people's lunch"
+    end
+end
